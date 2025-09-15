@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+  <!-- Navbar -->
   <header>
-    <!-- Navbar reutilizable -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="menuNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
             <li class="nav-item"><a class="nav-link active" href="services.html">Servicios</a></li>
             <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
@@ -34,67 +34,55 @@
   </header>
 
   <!-- Sección Servicios -->
-  <section id="services" class="py-5 bg-white">
+  <section id="services" class="py-5 text-center text-white colorful-cta">
     <div class="container">
-      <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Nuestros Servicios</h2>
-      <div class="row text-center">
+      <h2 class="mb-5 animate__animated animate__fadeInDown">✨ Nuestros Servicios ✨</h2>
+      <div class="row g-4">
 
         <!-- Servicio 1 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow-sm border-0 animate__animated animate__fadeInUp">
-            <div class="card-body">
-              <div class="mb-3">
-                <img src="img/web.png" alt="Desarrollo Web" width="60">
-              </div>
-              <h5 class="card-title">Desarrollo Web</h5>
-              <p class="card-text">Creamos sitios modernos, responsivos y optimizados para cualquier dispositivo.</p>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card animate__animated animate__fadeInUp">
+            <img src="img/web.png" alt="Desarrollo Web">
+            <h5>Desarrollo Web</h5>
+            <p>Creamos sitios modernos, responsivos y optimizados para cualquier dispositivo.</p>
           </div>
         </div>
 
         <!-- Servicio 2 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow-sm border-0 animate__animated animate__bounceIn animate__delay-1s">
-            <div class="card-body">
-              <div class="mb-3">
-                <img src="img/app.png" alt="Apps Móviles" width="60">
-              </div>
-              <h5 class="card-title">Apps Móviles</h5>
-              <p class="card-text">Desarrollamos aplicaciones móviles nativas y multiplataforma adaptadas a tu negocio.</p>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card animate__animated animate__fadeInUp animate__delay-1s">
+            <img src="img/app.png" alt="Apps Móviles">
+            <h5>Apps Móviles</h5>
+            <p>Desarrollamos aplicaciones nativas y multiplataforma adaptadas a tu negocio.</p>
           </div>
         </div>
 
         <!-- Servicio 3 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow-sm border-0 animate__animated animate__flipInY animate__delay-2s">
-            <div class="card-body">
-              <div class="mb-3">
-                <img src="img/consultoria.png" alt="Consultoría" width="60">
-              </div>
-              <h5 class="card-title">Consultoría</h5>
-              <p class="card-text">Brindamos asesoría tecnológica para optimizar procesos y estrategias digitales.</p>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="img/consultoria.png" alt="Consultoría">
+            <h5>Consultoría</h5>
+            <p>Asesoría tecnológica para optimizar procesos y estrategias digitales.</p>
           </div>
         </div>
 
         <!-- Servicio 4 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow-sm border-0 animate__animated animate__lightSpeedInRight animate__delay-3s">
-            <div class="card-body">
-              <div class="mb-3">
-                <img src="img/soporte.png" alt="Soporte" width="60">
-              </div>
-              <h5 class="card-title">Soporte</h5>
-              <p class="card-text">Ofrecemos soporte técnico confiable para mantener tus sistemas siempre en marcha.</p>
-            </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card animate__animated animate__fadeInUp animate__delay-3s">
+            <img src="img/soporte.png" alt="Soporte">
+            <h5>Soporte</h5>
+            <p>Soporte técnico confiable para mantener tus sistemas siempre en marcha.</p>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+  
+ <a href="index.html" class="btn btn-primary" id="boton_volver">Volver</a>
 
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">
     <p class="mb-0">© 2025 CoderHub.run - Todos los derechos reservados.</p>
   </footer>

@@ -1,116 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoderHub.run - Inicio</title>
-  <link rel="stylesheet" href="./CSS/bootstrap.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="./CSS/styles.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderHub.run - Inicio</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./CSS/styles.css">
+
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="CoderHub Logo" width="60" height="60" class="d-inline-block align-text-top">
-          CoderHub.run
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" title="Abrir menú de navegación" aria-label="Abrir menú de navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-          </ul>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="CoderHub Logo" width="60" height="60"
+                        class="d-inline-block align-text-top">
+                    CoderHub.run
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    title="Abrir menú de navegación" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="img/logo.png" alt="Logo CoderHub">
+        <h1 class="animate__animated animate__fadeInDown">Bienvenido a CoderHub.run</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">
+            Impulsamos tu empresa con soluciones digitales innovadoras
+        </p>
+    </section>
+
+    <!-- Sección Nosotros y Servicios lado a lado -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Nosotros -->
+                <div class="col-md-6">
+                    <div class="colorful-cta text-center h-100 animate__animated animate__fadeInUp">
+                        <h2 class="mb-3">✨ Conoce más de nosotros ✨</h2>
+                        <p class="mb-4">
+                            Impulsa tu empresa con nosotros y descubre cómo podemos ayudarte a crecer y alcanzar tus
+                            metas digitales.
+                        </p>
+                        <a href="about.html" class="cta-btn">
+                            <span>Explorar más sobre Nosotros</span> 👉
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicios -->
+                <div class="col-md-6">
+                    <div class="colorful-cta text-center h-100 animate__animated animate__fadeInUp">
+                        <h2 class="mb-3">💡 Soluciones creadas para desarrolladores y empresas</h2>
+                        <p class="mb-4">
+                            Ya sea que necesites un <strong>sitio web moderno</strong>, una <strong>app móvil</strong> o
+                            integrar <strong>tecnologías en la nube</strong>,
+                            en <strong>CoderHub.run</strong> transformamos ideas en productos digitales de alto impacto
+                            🚀.
+                        </p>
+                        <a href="services.html" class="cta-btn"><span>Explorar Servicios</span>👉</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img src="img/logo.png" alt="Logo CoderHub">
-    <h1 class="animate__animated animate__fadeInDown">Bienvenido a CoderHub.run</h1>
-    <p class="animate__animated animate__fadeInUp animate__delay-1s">
-      Impulsamos tu empresa con soluciones digitales innovadoras 🚀
-    </p>
-  </section>
 
-<!-- Sección Nosotros y Servicios lado a lado -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4 align-items-stretch">
-      
-      <!-- Nosotros -->
-      <div class="col-md-6">
-        <div class="colorful-cta text-center h-100 animate__animated animate__fadeInUp">
-          <h2 class="mb-3">✨ Conoce más de nosotros ✨</h2>
-          <p class="mb-4">
-            Impulsa tu empresa con nosotros y descubre cómo podemos ayudarte a crecer y alcanzar tus metas digitales.  
-          </p>
-          <a href="about.html" class="cta-btn">
-            <span>Explorar más sobre Nosotros</span> 👉
-          </a>
+    <!-- Destacados -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5 animate__animated animate__fadeInDown">¿Por qué elegirnos?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card animate__animated animate__fadeInLeft">
+                        <h3>⚡ Innovación</h3>
+                        <p>Usamos las últimas tecnologías para garantizar proyectos modernos y escalables.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card animate__animated animate__fadeInUp">
+                        <h3>🤝 Compromiso</h3>
+                        <p>Acompañamos a nuestros clientes desde la idea hasta la implementación final.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card animate__animated animate__fadeInRight">
+                        <h3>🌍 Impacto</h3>
+                        <p>Proyectos que generan un impacto real en negocios y comunidades.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- CONTACTO -->
+    <section id="contact" class="py-5 contact-bg">
+        <div class="container">
+            <div class="row g-4 align-items-center">
 
-      <!-- Servicios -->
-      <div class="col-md-6">
-        <div class="colorful-cta text-center h-100 animate__animated animate__fadeInUp">
-          <h2 class="mb-3">💡 Soluciones creadas para desarrolladores y empresas</h2>
-          <p class="mb-4">
-            Ya sea que necesites un <strong>sitio web moderno</strong>, una <strong>app móvil</strong> o integrar <strong>tecnologías en la nube</strong>,  
-            en <strong>CoderHub.run</strong> transformamos ideas en productos digitales de alto impacto 🚀.
-          </p>
-          <a href="services.html" class="cta-btn">Explorar Servicios</a>
+                <!-- Formulario -->
+                <div class="col-lg-6">
+                    <div class="p-4 shadow rounded contact-panel">
+                        <h3 class="text-center mb-4 fw-bold">Contáctanos</h3>
+                        <form id="contactForm" action="#" method="post">
+
+                            <!-- Nombre -->
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" placeholder="Tu nombre" name="user_name"
+                                    required>
+                            </div>
+
+                            <!-- Correo -->
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" class="form-control" placeholder="nombre@ejemplo.com"
+                                    name="user_email" required>
+                            </div>
+
+                            <!-- Asunto -->
+                            <div class="mb-3 input-group">
+                                <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                                <input type="text" class="form-control" placeholder="Motivo de tu mensaje"
+                                    name="user_subject" required>
+                            </div>
+
+                            <!-- Mensaje -->
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje aquí..."
+                                    name="user_message" required></textarea>
+                            </div>
+
+                            <!-- Botón -->
+                            <div class="d-grid">
+                                <button type="submit"
+                                    class="btn btn-primary btn-lg d-flex align-items-center justify-content-center gap-2">
+                                    Enviar <i class="bi bi-send"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded shadow">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.2683875398075!2d-75.59814202503371!3d1.597097998388026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMzUnNDkuNiJOIDc1wrAzNSc0NC4wIlc!5e0!3m2!1ses!2sco!4v1757938870323!5m2!1ses!2sco"
+                            width="600" height="450" class="map-iframe" allowfullscreen="" loading="lazy"
+                            title="Ubicación de CoderHub.run"></iframe>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
-  <!-- Destacados -->
-  <section class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-5 animate__animated animate__fadeInDown">¿Por qué elegirnos?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card animate__animated animate__fadeInLeft">
-            <h3>⚡ Innovación</h3>
-            <p>Usamos las últimas tecnologías para garantizar proyectos modernos y escalables.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card animate__animated animate__fadeInUp">
-            <h3>🤝 Compromiso</h3>
-            <p>Acompañamos a nuestros clientes desde la idea hasta la implementación final.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card animate__animated animate__fadeInRight">
-            <h3>🌍 Impacto</h3>
-            <p>Proyectos que generan un impacto real en negocios y comunidades.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="py-3 text-center">
-    <p class="mb-0">© 2025 CoderHub.run - Todos los derechos reservados</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <p class="mb-0">© 2025 CoderHub.run - Todos los derechos reservados</p>
+    </footer>
 
-  <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.js"></script>
 </body>
+
 </html>
-    
