@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - CoderHub.run</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    /* Fondo degradado animado */
+    body {
+      background: linear-gradient(135deg, #0d6efd, #0b2c4d, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Tarjetas del equipo en contraste */
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card-body {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.85);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="CoderHub Logo" width="40" height="40" class="d-inline-block align-text-top">
+          CoderHub.run
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Historia con carrusel -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 animate__animated animate__fadeInLeft">
+          <h2 class="mb-4">Nuestra Historia</h2>
+          <p>
+            Fundada en 2020, <strong>CoderHub.run</strong> nació como una comunidad de desarrolladores apasionados por 
+            el software libre y el aprendizaje colaborativo. Con el tiempo, evolucionamos hacia una empresa dedicada 
+            al desarrollo de software, consultoría y soluciones digitales para clientes de diferentes industrias.
+          </p>
+        </div>
+        <div class="col-md-6 animate__animated animate__fadeInRight">
+          <div id="carouselHistoria" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Oficina CoderHub">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Equipo trabajando">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Evento de tecnología">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHistoria" data-bs-slide="prev" aria-label="Anterior">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHistoria" data-bs-slide="next" aria-label="Siguiente">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselHistoria" data-bs-slide-to="0" class="active" aria-label="Imagen 1"></button>
+              <button type="button" data-bs-target="#carouselHistoria" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+              <button type="button" data-bs-target="#carouselHistoria" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión, visión y valores -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-5 animate__animated animate__fadeInDown">Misión, Visión y Valores</h2>
+      <div class="row">
+        <div class="col-md-4 animate__animated animate__fadeInLeft">
+          <h4>Misión</h4>
+          <p>Crear soluciones digitales innovadoras que impulsen la transformación tecnológica de nuestros clientes.</p>
+        </div>
+        <div class="col-md-4 animate__animated animate__fadeInUp">
+          <h4>Visión</h4>
+          <p>Ser reconocidos como una empresa líder en desarrollo de software en Latinoamérica, destacándonos por la calidad y creatividad de nuestros proyectos.</p>
+        </div>
+        <div class="col-md-4 animate__animated animate__fadeInRight">
+          <h4>Valores</h4>
+          <ul class="list-unstyled">
+            <li>✔ Innovación</li>
+            <li>✔ Compromiso</li>
+            <li>✔ Trabajo en equipo</li>
+            <li>✔ Responsabilidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuestro Equipo -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Nuestro Equipo</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-dark">
+            <img src="img/ceo.jpg" class="card-img-top" alt="CEO">
+            <div class="card-body text-center">
+              <h5 class="card-title">Laura Martínez</h5>
+              <p class="card-text">CEO & Fundadora</p>
+              <a href="equipo/laura.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-dark">
+            <img src="img/dev.jpg" class="card-img-top" alt="Desarrollador">
+            <div class="card-body text-center">
+              <h5 class="card-title">Carlos Gómez</h5>
+              <p class="card-text">Desarrollador Senior</p>
+              <a href="equipo/carlos.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-dark">
+            <img src="img/designer.jpg" class="card-img-top" alt="Diseñadora">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mariana Torres</h5>
+              <p class="card-text">UX/UI Designer</p>
+              <a href="equipo/mariana.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 mt-5">
+    <p class="mb-0">© 2025 CoderHub.run - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./js/bootstrap.js"></script>
+</body>
+</html>
