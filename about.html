@@ -7,70 +7,35 @@
   <link rel="stylesheet" href="./CSS/bootstrap.css">
   <link rel="stylesheet" href="./CSS/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    /* Fondo degradado animado */
-    body {
-      background: linear-gradient(135deg, #0d6efd, #0b2c4d, #1e3c72, #2a5298);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: white;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .card-img-top {
-  height: 300px;       /* Todas las imágenes tendrán la misma altura */
-  width: 100%;         /* Ocupan todo el ancho del contenedor */
-  object-fit: cover;   /* Ajusta la imagen sin deformarla */
-  border-radius: 10px; /* Opcional: bordes redondeados para mejor estilo */
-}
-
-    /* Tarjetas del equipo en contraste */
-    .card {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-    }
-
-    .card-body {
-      background: #2a5298;
-      color: #000000;
-    }
-
-    footer {
-      background: rgba(0,0,0,0.85);
-    }
-  </style>
+  
 </head>
 <body>
 
-  <!-- Encabezado -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="CoderHub Logo" width="40" height="40" class="d-inline-block align-text-top">
-          CoderHub.run
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-label="Abrir menú de navegación">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" href="about.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Portafolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-header">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="CoderHub Logo" width="70" height="70"
+                        class="d-inline-block align-text-top">
+                    CoderHub.run
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+                    title="Abrir menú de navegación" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portafoleo.html">Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
 
   <!-- Sección Historia con carrusel -->
   <section class="py-5">
@@ -143,7 +108,7 @@
   </section>
 
   <!-- Nuestro Equipo -->
-  <section class="py-5">
+  <section id="equipo" class="py-5">
     <div class="container">
       <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Nuestro Equipo</h2>
       <div class="row justify-content-center">
@@ -189,10 +154,50 @@
  
 
 
-  <!-- Footer -->
-  <footer class="text-center py-3 mt-5">
-    <p class="mb-0">© 2025 CoderHub.run - Todos los derechos reservados</p>
-  </footer>
+<footer id="contactos" class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+     
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
+        <h5 class="text-warning mb-3">📞 Contacto</h5>
+        <p><i class="fas fa-phone-alt"></i> Teléfono: +57 3132459278</p>
+        <p><i class="fas fa-envelope"></i> Correo: coderhub.run@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Ubicación: Florencia, Caquetá, Colombia</p>
+      </div>
+
+    
+<div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+  <h5 class="text-warning mb-3">🌐 Redes Sociales</h5>
+  <div class="d-flex justify-content-center justify-content-md-start gap-3">
+
+    <a href="#" class="btn btn-outline-light rounded-circle p-2">
+      <img src="./img/facebook.png" alt="Facebook" width="20" height="20">
+    </a>
+
+    <a href="#" class="btn btn-outline-light rounded-circle p-2">
+      <img src="./img/twitter.png" alt="Twitter" width="20" height="20">
+    </a>
+
+    <a href="#" class="btn btn-outline-light rounded-circle p-2">
+      <img src="./img/instagram.png" alt="Instagram" width="20" height="20">
+    </a>
+
+    <a href="#" class="btn btn-outline-light rounded-circle p-2">
+      <img src="./img/twitter.png" alt="twitter" width="20" height="20">
+    </a>
+
+  </div>
+</div>
+
+
+      <div class="col-md-4 mb-4 animate__animated animate__fadeInRight text-center text-md-start">
+        <h5 class="text-warning mb-3">© 2025 CoderHub</h5>
+        <small>Todos los derechos reservados</small>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
   <script src="./js/bootstrap.js"></script>
 </body>
